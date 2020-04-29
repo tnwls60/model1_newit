@@ -138,7 +138,7 @@
 												<li><a href="write.jsp" class="button">글쓰기</a></li>
 											</ul>
 										</div>
-							</article>
+							
 							
 							<div id="pageBox" class="row aln-center">
 									<%
@@ -179,6 +179,8 @@
 										}
 									%>
 									</div>
+									
+							</article>
 					</div>
 				
 				<!-- Footer -->

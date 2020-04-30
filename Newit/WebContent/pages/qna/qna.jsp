@@ -97,14 +97,14 @@
 														</tr>
 														<tr id="viewPw<%=dto.getNo() %>" style="display:none;">
 																<td colspan="8">
-																	<form name="viewFrm" action="passchk_proc.jsp" method="post">
+																	<form name="passForm" id="passForm" action="passchk_proc.jsp" method="post">
 																			<div class="row aln-center">
 																				<label>▲ 비밀번호 입력</label> 
 																			</div>
 																	        <div class="row aln-center">
-																	            <input type="password" name="password" placeholder="비밀번호를 입력하세요" required="required" class="col-4">
-																	            <input type="submit" value="입력">
+																	            <input type="password" name="password" id="password" placeholder="비밀번호를 입력하세요" onblur="checkPw();" required="required" class="col-4">
 																	            <input type="hidden" name="no" value="<%=dto.getNo() %>">
+																	            <input type="submit" value="입력">
 																	        </div>
 																	</form>
 																</td>
@@ -194,12 +194,12 @@
 		<script src="/Newit/assets/js/breakpoints.min.js"></script>
 		<script src="/Newit/assets/js/util.js"></script>
 		<script src="/Newit/assets/js/main.js"></script>
-		<script type="text/javascript">
+		<script src="/Newit/assets/js/qnaReadCheck.js"></script>
 		
+		<script type="text/javascript">
 			function passchk(no) {
 				$("#viewPw"+no).toggle();
 			}
-			
 		</script>
 		  
 	</body>

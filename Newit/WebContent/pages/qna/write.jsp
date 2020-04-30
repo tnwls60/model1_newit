@@ -33,7 +33,7 @@
 								</header>
 								
 									<section>
-									<form method="post" id="qnaForm" action="write_proc.jsp" accept-charset="utf-8">
+									<form method="post" name="qnaForm" id="qnaForm" action="write_proc.jsp" accept-charset="utf-8">
 										<div class="row gtr-uniform">
 											<div class="col-12">
 												<select name="category" id="category">
@@ -48,11 +48,12 @@
 											</div>
 											<div class="col-12">
 												<label>비밀번호</label>
-												<input type="password" name="password">
+												<input type="password" name="password" id="password" onblur="checkPw();">
+												<span id="checkpw"></span>
 											</div>
 											<div class="col-12">
 												<ul class="actions">
-													<li><input type="submit" value="글쓰기" /></li>
+													<li><input type="button" onclick="checkQna();" value="글쓰기" /></li>
 													<li><a href="qna.jsp" class="button">목록으로</a></li>
 												</ul>
 											</div>
@@ -74,5 +75,8 @@
 		<script src="/Newit/assets/js/breakpoints.min.js"></script>
 		<script src="/Newit/assets/js/util.js"></script>
 		<script src="/Newit/assets/js/main.js"></script>
+		<script src="/Newit/assets/js/qnaWriteCheck.js"></script>
+		
+		
 	</body>
 </html>

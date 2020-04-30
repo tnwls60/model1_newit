@@ -92,7 +92,17 @@
 																	<%=dto.getCategory()%>
 																	</a>
 																</td>
-																<td><%=dto.getId() %></td>
+											 	<%
+												 	if(dto.getId() != null){
+												%>
+																<td><%=dto.getId() %></td>		
+												<%
+												 	}else{
+												%>
+																<td>비회원</td>
+												<%
+												 	}
+												%>
 																<td><%=dto.getWritedate() %></td>
 														</tr>
 														<tr id="viewPw<%=dto.getNo() %>" style="display:none;">

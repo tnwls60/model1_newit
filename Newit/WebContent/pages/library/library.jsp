@@ -39,6 +39,8 @@
 								<%
 									request.setCharacterEncoding("UTF-8");
 								
+									String id = (String)session.getAttribute("id");
+								
 									LibraryDAO dao = new LibraryDAO();
 									
 									int count = dao.getBoardCount();
@@ -109,9 +111,17 @@
 										</table>
 										<div class="col-6 col-12-medium row aln-right">
 											<ul class="actions">
+											<% if((id != null  &&  id.equals("admin"))){
+											%>
 												<li><a href="write.jsp" class="button">글쓰기</a></li>
+											<% 	
+											}
+											%>
 											</ul>
 										</div>
+										
+										
+										
 										
 										<form id="library_search" action="library.jsp">
 										<div class="row aln-center">

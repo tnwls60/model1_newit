@@ -4,7 +4,7 @@
 <html>
 <head>
 	<head>
-		<title>Q&amp;A</title>
+		<title>Q&amp;A write</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="/Newit/assets/css/main.css" />
